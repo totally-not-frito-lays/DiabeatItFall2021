@@ -50,3 +50,6 @@ Besides just crying, you can also:
   1. decide whether you want to keep local vs remote changes in your merge conflict
   2. ???
   3. profit 
+
+## Practice with Git
+It's easiest to internalize this control flow when you actually try it out yourself. You can do this by following the steps above and adding your name to [members.md](../members.md)
