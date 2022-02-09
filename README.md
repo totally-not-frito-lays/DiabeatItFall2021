@@ -51,5 +51,8 @@ Besides just crying, you can also:
   2. ???
   3. profit 
 
+## Make branches?
+**idk if we wanna do this or if it's a good idea**
+
 ## Practice with Git
-It's easiest to internalize this control flow when you actually try it out yourself. You can do this by following the steps above and adding your name to [members.md](../members.md)
+It's easiest to internalize this control flow when you actually try it out yourself. You can do this by following the steps above and adding your name to [members.md](./members.md)
