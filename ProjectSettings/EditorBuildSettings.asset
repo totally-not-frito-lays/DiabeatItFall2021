@@ -219,7 +219,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DSymp2.unity
     guid: f9c902b6ee66c3447aa962913ee18004
   - enabled: 0
-    path: Assets/DSymp9.unity
+    path: 
     guid: dad96ece3bea6614e87f572c9b2baf8d
   - enabled: 1
     path: Assets/Scenes/DSymptomFatigue.unity
@@ -236,4 +236,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DSympWeight.unity
     guid: 5528e5ba8c1eb4de185ddec1622ea292
+  - enabled: 1
+    path: Assets/Scenes/ChapterDivider.unity
+    guid: a7ee29891c52942489520b2194271dec
+  - enabled: 1
+    path: Assets/Scenes/DInsulinRot1.unity
+    guid: e4cafc06c4107634485c7adf4ff69d14
+  - enabled: 1
+    path: Assets/Scenes/DInsulinRot2.unity
+    guid: e7395038dc4becf458866729d253acee
   m_configObjects: {}
