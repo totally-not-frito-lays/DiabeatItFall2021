@@ -248,4 +248,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DInsulinRot3.unity
     guid: 247d83914e7b1a649803b9d1ed6fe2d7
+  - enabled: 1
+    path: Assets/Scenes/DInsulinRot5.unity
+    guid: 4f45de50d9194e542abdad070d18d160
+  - enabled: 1
+    path: Assets/Scenes/DInsulinRot4.unity
+    guid: f8ec196ec9e5c084bb67e8860cb374f5
+  - enabled: 1
+    path: Assets/Scenes/DInsulinRot6.unity
+    guid: d253c9112b4f8254db2af59fc4c345de
+  - enabled: 1
+    path: Assets/Scenes/DInsulinRot7.unity
+    guid: 8c45b852f97b8bb498098f4c8ade3ea8
   m_configObjects: {}
