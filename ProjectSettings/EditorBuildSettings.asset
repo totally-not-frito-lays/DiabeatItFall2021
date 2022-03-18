@@ -260,4 +260,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DInsulinRot7.unity
     guid: 8c45b852f97b8bb498098f4c8ade3ea8
+  - enabled: 1
+    path: Assets/Scenes/ChapterInsulin&Friends.unity
+    guid: d4203f1ca05428b4b9bc4a64d48202ca
   m_configObjects: {}
