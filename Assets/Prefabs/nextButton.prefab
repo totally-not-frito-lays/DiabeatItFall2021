@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8445030854583050377}
   - component: {fileID: 8445030854583050376}
   - component: {fileID: 8445030854583050383}
-  - component: {fileID: 8445030854583050372}
   m_Layer: 0
   m_Name: nextButton
   m_TagString: Untagged
@@ -138,9 +137,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8445030854583050372}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Intro8, Assembly-CSharp
-        m_MethodName: sceneIntro8
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -210,7 +209,7 @@ Animator:
   m_GameObject: {fileID: 8445030854583050381}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c7daf8cc5320a04eba7aca421d125ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36e3489e5dd03df40a4014a4248f6bc6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -221,15 +220,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8445030854583050372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8445030854583050381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1d83320e078045bbb3b37d91431af56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

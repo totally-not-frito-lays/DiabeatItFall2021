@@ -125,9 +125,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial4.unity
     guid: 173e7ad4f69f043a7b3bd76e81518ca7
-  - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 00cd9d3a8622f4a2481893650c02749d
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DInsulin2.unity
     guid: e9898972bebb54cfa86fceb6280920c8
@@ -223,7 +223,7 @@ EditorBuildSettings:
     guid: f9c902b6ee66c3447aa962913ee18004
   - enabled: 0
     path: 
-    guid: dad96ece3bea6614e87f572c9b2baf8d
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DSymptomFatigue.unity
     guid: e7e853d414b1df94d870fe617c815e7b
@@ -266,4 +266,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChapterInsulin&Friends.unity
     guid: d4203f1ca05428b4b9bc4a64d48202ca
+  - enabled: 1
+    path: Assets/Scenes/MainMenuPV.unity
+    guid: eb3cfc01ea1a858498c261a9bd6e5f76
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c1e626453b9dd5148a5b7935e1018ea5
   m_configObjects: {}

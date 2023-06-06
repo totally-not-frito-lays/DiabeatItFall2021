@@ -1456,7 +1456,6 @@ GameObject:
   - component: {fileID: 1581382633}
   - component: {fileID: 1581382632}
   - component: {fileID: 1581382631}
-  - component: {fileID: 1581382636}
   m_Layer: 0
   m_Name: nextButton
   m_TagString: Untagged
@@ -1494,7 +1493,7 @@ Animator:
   m_GameObject: {fileID: 1581382629}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c7daf8cc5320a04eba7aca421d125ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36e3489e5dd03df40a4014a4248f6bc6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1663,18 +1662,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1581382636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581382629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bca6842539e67d41997749f5391e74b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1590655121
 GameObject:
   m_ObjectHideFlags: 0
