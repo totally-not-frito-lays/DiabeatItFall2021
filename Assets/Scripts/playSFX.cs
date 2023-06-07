@@ -7,6 +7,7 @@ public class playSFX : MonoBehaviour
     public AudioSource SFX;
 
     public void playFX() {
+      Debug.Log("AUDIO SHOULD PLAY RN");
       SFX.Play();
     }
 }

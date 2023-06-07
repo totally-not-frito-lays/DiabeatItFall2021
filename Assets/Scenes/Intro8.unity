@@ -150,6 +150,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5706}
   m_LocalScale: {x: 647.5, y: 518.929, z: 88.0002}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 3
@@ -165,6 +166,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -215,7 +217,9 @@ GameObject:
   m_Component:
   - component: {fileID: 267328788}
   - component: {fileID: 267328787}
+  - component: {fileID: 267328789}
   - component: {fileID: 267328786}
+  - component: {fileID: 267328790}
   m_Layer: 0
   m_Name: buttonPress
   m_TagString: Untagged
@@ -245,9 +249,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7bd6aa0bab4fa65448501c9aac53f50e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 796b73fa7241a6d49ace6ed3e19da48e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -341,10 +345,36 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &267328789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267328785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68c2a9ea863087479ed3b3a3c128def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFX: {fileID: 267328787}
+--- !u!114 &267328790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267328785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f3b24a945667641b7fc07faff7c8b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &368933852
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,13 +403,14 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.17364825, w: 0.9848078}
   m_LocalPosition: {x: -4.3156257, y: -25.036264, z: -7637.666}
   m_LocalScale: {x: 84.86295, y: 84.86295, z: 84.86295}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
 --- !u!95 &368933854
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -392,10 +423,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &368933855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -407,6 +440,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -474,6 +508,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 309, y: -40, z: -7637.666}
   m_LocalScale: {x: 84.86295, y: 84.86295, z: 84.86295}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 4
@@ -489,6 +524,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -556,6 +592,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 251, y: 198, z: -7637.666}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 11
@@ -571,6 +608,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -638,6 +676,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.8040001, y: -217.46202, z: 0}
   m_LocalScale: {x: 81, y: 81, z: 81}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 5
@@ -653,6 +692,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -783,6 +823,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1423863920}
   - {fileID: 852462985}
@@ -799,7 +840,7 @@ RectTransform:
   - {fileID: 1541367800}
   - {fileID: 1545123228}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -820,8 +861,6 @@ GameObject:
   - component: {fileID: 835089959}
   - component: {fileID: 835089958}
   - component: {fileID: 835089957}
-  - component: {fileID: 835089962}
-  - component: {fileID: 835089963}
   m_Layer: 0
   m_Name: nextButton
   m_TagString: Untagged
@@ -839,6 +878,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5706.0005}
   m_LocalScale: {x: 83, y: 83, z: 83}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 2
@@ -850,7 +890,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &835089957
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -858,15 +898,17 @@ Animator:
   m_GameObject: {fileID: 835089955}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c7daf8cc5320a04eba7aca421d125ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36e3489e5dd03df40a4014a4248f6bc6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &835089958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,19 +991,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 835089963}
-        m_TargetAssemblyTypeName: Intro12, Assembly-CSharp
-        m_MethodName: sceneIntro12
-        m_Mode: 1
+      - m_Target: {fileID: 267328790}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadThisScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Intro9
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1863307228}
+      - m_Target: {fileID: 267328789}
         m_TargetAssemblyTypeName: playSFX, Assembly-CSharp
         m_MethodName: playFX
         m_Mode: 1
@@ -984,6 +1026,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1024,30 +1067,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &835089962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835089955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c684df061cc9c4700a12e16c68ea3f1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &835089963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835089955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9b3e005be434eabafbc38d74575a69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &852462984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1082,6 @@ GameObject:
   - component: {fileID: 852462988}
   - component: {fileID: 852462987}
   - component: {fileID: 852462986}
-  - component: {fileID: 852462992}
   m_Layer: 0
   m_Name: backButton
   m_TagString: Untagged
@@ -1081,6 +1099,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5706.0005}
   m_LocalScale: {x: 83, y: 83, z: 83}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 1
@@ -1104,7 +1123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &852462987
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1117,10 +1136,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &852462988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,21 +1186,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1863307228}
-        m_TargetAssemblyTypeName: playSFX, Assembly-CSharp
-        m_MethodName: playFX
-        m_Mode: 1
+      - m_Target: {fileID: 267328790}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadThisScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Intro7
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 852462992}
-        m_TargetAssemblyTypeName: Intro7, Assembly-CSharp
-        m_MethodName: sceneIntro7
+      - m_Target: {fileID: 267328789}
+        m_TargetAssemblyTypeName: playSFX, Assembly-CSharp
+        m_MethodName: playFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1238,6 +1259,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1278,18 +1300,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &852462992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852462984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3910f419ec18dd04989ab4bf415cc2ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &875297881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1327,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 84.86295, z: -7637.6665}
   m_LocalScale: {x: 84.86295, y: 84.86295, z: 84.86295}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 7
@@ -1332,6 +1343,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1403,6 +1415,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5706.0005}
   m_LocalScale: {x: 83, y: 83, z: 83}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 0
@@ -1414,7 +1427,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1423863921
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1427,10 +1440,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1423863922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +1539,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1591,6 +1607,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 161.23961, z: -7637.6665}
   m_LocalScale: {x: 84.86295, y: 84.86295, z: 84.86295}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 8
@@ -1606,6 +1623,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1673,6 +1691,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 263, z: -7637.666}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 12
@@ -1688,6 +1707,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1755,6 +1775,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -226, y: 183, z: -7637.666}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 13
@@ -1770,6 +1791,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1837,6 +1859,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 229.12997, y: 33.945183, z: -7637.6665}
   m_LocalScale: {x: 84.86295, y: 84.86295, z: 84.86295}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 10
@@ -1852,6 +1875,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1903,9 +1927,8 @@ GameObject:
   - component: {fileID: 1863307230}
   - component: {fileID: 1863307227}
   - component: {fileID: 1863307229}
-  - component: {fileID: 1863307228}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1954,19 +1977,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1863307228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863307226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e68c2a9ea863087479ed3b3a3c128def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SFX: {fileID: 267328787}
 --- !u!81 &1863307229
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1985,9 +1995,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881777839
 GameObject:
@@ -2016,6 +2027,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -246.33514, y: 16.972591, z: -7637.6665}
   m_LocalScale: {x: 84.86295, y: 84.86295, z: 84.86295}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814440905}
   m_RootOrder: 9
@@ -2031,6 +2043,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2101,6 +2114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2133,6 +2147,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
